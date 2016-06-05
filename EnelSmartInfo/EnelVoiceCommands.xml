@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ 
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0"> 
+    <!-- The CommandSet Name is used to programmatically access the CommandSet --> 
+    <CommandSet xml:lang="it-it" Name="enelItalianCommands"> 
+        <!-- The CommandPrefix provides an alternative to your full app name for invocation -->
+        <CommandPrefix>Enel Smart Info</CommandPrefix>
+        <!-- The CommandSet Example appears in the global help alongside your app name --> 
+        <Example> Controlla i tuoi consumi </Example>  
+		
+		<Command Name="MostraConsumiGiornoMese"> 
+            <Example> mostra consumi dal 20 Febbraio </Example> 
+            <ListenFor> mostra consumi dal {day} [di] {month} </ListenFor>
+            <Feedback> Sto calcolando i consumi... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>
+	  
+	  <Command Name="MostraConsumiGiorno"> 
+            <Example> mostra consumi del giorno 5 Gennaio </Example> 
+            <ListenFor> mostra consumi [il] [del] [giorno] {day} [di] {month} </ListenFor>
+            <Feedback> Sto calcolando la produzione... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>
+	  
+	  <Command Name="MostraConsumiSettimana"> 
+            <Example> mostra consumi dell'ultima settimana </Example> 
+            <ListenFor> mostra consumi [dell] ultima settimana </ListenFor>
+            <Feedback> Sto calcolando la produzione... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>
+		
+		<Command Name="MostraConsumiMensile"> 
+            <Example> mostra consumi di Gennaio </Example> 
+            <ListenFor> mostra consumi [di] {month} </ListenFor>
+            <Feedback> Sto calcolando i consumi... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>
+		
+		<Command Name="MostraConsumiOggi"> 
+            <Example> mostra consumi di oggi </Example> 
+            <ListenFor> mostra consumi di oggi </ListenFor>
+            <Feedback> Sto calcolando i consumi... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>
+
+      <!--<Command Name="MostraEnergiaProdottaOggi">
+        <Example> mostra energia prodotta oggi </Example>
+        <ListenFor> mostra energia prodotta [di] oggi </ListenFor>
+        <Feedback> Sto calcolando la produzione... </Feedback>
+        <Navigate Target="VoicePage.xaml" />
+      </Command>
+	  
+	  <Command Name="MostraEnergiaProdottaGiorno"> 
+            <Example> mostra energia prodotta il giorno 20 Febbraio </Example> 
+            <ListenFor> mostra energia prodotta [il] [del] [giorno] {day} [di] {month} </ListenFor>
+            <Feedback> Sto calcolando la produzione... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command> 
+	  
+	  <Command Name="MostraEnergiaProdottaGiornoMese"> 
+            <Example> mostra energia prodotta dal 20 Febbraio </Example> 
+            <ListenFor> mostra energia prodotta dal {day} [di] {month} </ListenFor>
+            <Feedback> Sto calcolando la produzione... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>  
+		
+		<Command Name="MostraEnergiaProdottaSettimanale"> 
+            <Example> mostra energia prodotta dell'ultima settimana </Example> 
+            <ListenFor> mostra energia prodotta [dell'] ultima settimana </ListenFor>
+            <Feedback> Sto calcolando i consumi... </Feedback> 
+            <Navigate Target="VoicePage.xaml" /> 
+        </Command>-->
+
+      <Command Name="MostraTariffa">
+        <Example> mostra il piano tariffario attuale </Example>
+        <ListenFor> Mostra [il] piano tariffario attuale </ListenFor>
+        <Feedback> Sto recuperando il piano tariffario... </Feedback>
+        <Navigate Target="VoicePage.xaml" />
+      </Command>
+
+      <Command Name="MostraTariffaMensileAnno">
+        <Example> mostra piano tariffario di Maggio </Example>
+        <ListenFor> Mostra [il] piano tariffario di {month}</ListenFor>
+        <Feedback> Sto recuperando il piano tariffario... </Feedback>
+        <Navigate Target="VoicePage.xaml" />
+      </Command>
+
+      <Command Name="ControllaSforoTariffa">
+        <Example> Dimmi se ho sforato il piano tariffario oggi/ultimo mese/ultima settimana </Example>
+        <ListenFor> Dimmi [se] [ho] [sforato] [il] [piano] [tariffario] [nell] {period} </ListenFor>
+        <Feedback> Sto recuperando il piano tariffario... </Feedback>
+        <Navigate Target="VoicePage.xaml" />
+      </Command>
+	  
+	    <PhraseList Label="period">
+			  <Item>oggi</Item>
+        <Item>questa settimana</Item>
+        <Item>questasettimana</Item>
+        <Item>ultimosettimana</Item>
+        <Item>ultima settimana</Item>
+        <Item>questo mese</Item>
+        <Item>questomese</Item>
+        <Item>ultimomese</Item>
+        <Item>ultimo mese</Item>
+		  </PhraseList>
+
+      <!--
+      <PhraseList Label="week">
+			<Item>prima</Item>
+			<Item>seconda</Item>
+			<Item>terza</Item>
+			<Item>quarta</Item>
+		</PhraseList>-->
+	  
+		<!--<PhraseList Label="year">
+			<Item>2015</Item>
+			<Item>2014</Item>
+			<Item>2013</Item>
+			<Item>2012</Item>
+      <Item>2011</Item>
+      <Item>2010</Item>
+		</PhraseList>-->
+	  
+        <PhraseList Label="month">
+			<Item>Gennaio</Item>
+			<Item>Febbraio</Item>
+			<Item>Marzo</Item>
+			<Item>Aprile</Item>
+			<Item>Maggio</Item>
+			<Item>Giugno</Item>
+			<Item>Luglio</Item>
+			<Item>Agosto</Item>
+			<Item>Settembre</Item>
+			<Item>Ottobre</Item>
+			<Item>Novembre</Item>
+			<Item>Dicembre</Item>
+		</PhraseList>
+
+        <PhraseList Label="day">
+			<Item>primo</Item>
+			  <Item>0</Item>
+			  <Item>1</Item> 
+			  <Item>2</Item> 
+			  <Item>3</Item> 
+			  <Item>4</Item> 
+			  <Item>5</Item> 
+			  <Item>6</Item> 
+			  <Item>7</Item> 
+			  <Item>8</Item> 
+			  <Item>9</Item> 
+			  <Item>10</Item> 
+			  <Item>11</Item> 
+			  <Item>12</Item> 
+			  <Item>13</Item> 
+			  <Item>14</Item> 
+			  <Item>15</Item> 
+			  <Item>16</Item> 
+			  <Item>17</Item> 
+			  <Item>18</Item> 
+			  <Item>19</Item> 
+			  <Item>20</Item> 
+			  <Item>21</Item> 
+			  <Item>22</Item> 
+			  <Item>23</Item> 
+			  <Item>24</Item> 
+			  <Item>25</Item> 
+			  <Item>26</Item> 
+			  <Item>27</Item> 
+			  <Item>28</Item> 
+			  <Item>29</Item> 
+			  <Item>30</Item> 
+			  <Item>31</Item>
+        </PhraseList>
+
+        <!--<PhraseList Label="hour">
+			  <Item>0</Item>
+			  <Item>1</Item> 
+			  <Item>2</Item> 
+			  <Item>3</Item> 
+			  <Item>4</Item> 
+			  <Item>5</Item> 
+			  <Item>6</Item> 
+			  <Item>7</Item> 
+			  <Item>8</Item> 
+			  <Item>9</Item> 
+			  <Item>10</Item> 
+			  <Item>11</Item> 
+			  <Item>12</Item> 
+			  <Item>13</Item> 
+			  <Item>14</Item> 
+			  <Item>15</Item> 
+			  <Item>16</Item> 
+			  <Item>17</Item> 
+			  <Item>18</Item> 
+			  <Item>19</Item> 
+			  <Item>20</Item> 
+			  <Item>21</Item> 
+			  <Item>22</Item> 
+			  <Item>23</Item> 
+			  <Item>24</Item>
+        </PhraseList>-->
+ 
+    </CommandSet> 
+</VoiceCommands>

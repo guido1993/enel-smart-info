@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnelSmartInfo", "EnelSmartInfo.csproj", "{48E58CDC-35DD-490F-93AD-8C81DF81571E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundAgents", "..\BackgroundAgents\BackgroundAgents.csproj", "{3B6C8FD1-B1C4-4594-A700-350D36223F7C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://madeinitaly.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EnelSmartInfo.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|ARM.Build.0 = Debug|ARM
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|x86.ActiveCfg = Debug|x86
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|x86.Build.0 = Debug|x86
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Debug|x86.Deploy.0 = Debug|x86
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|ARM.ActiveCfg = Release|ARM
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|ARM.Build.0 = Release|ARM
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|ARM.Deploy.0 = Release|ARM
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|x86.ActiveCfg = Release|x86
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|x86.Build.0 = Release|x86
+		{48E58CDC-35DD-490F-93AD-8C81DF81571E}.Release|x86.Deploy.0 = Release|x86
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Debug|ARM.Build.0 = Debug|ARM
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Debug|x86.ActiveCfg = Debug|x86
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Debug|x86.Build.0 = Debug|x86
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Release|ARM.ActiveCfg = Release|ARM
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Release|ARM.Build.0 = Release|ARM
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Release|x86.ActiveCfg = Release|x86
+		{3B6C8FD1-B1C4-4594-A700-350D36223F7C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,68 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EnelSmartInfo.Pages.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="White"
+    shell:SystemTray.ForegroundColor="#ed7d00">
+
+    <phone:PhoneApplicationPage.Resources>
+        <!-- template per il titolo del pivot-->
+        <DataTemplate x:Key="PivotTitle">
+            <ContentPresenter>
+                <TextBlock Text="{Binding}" FontSize="30" Margin="0,0,0,0"/>
+            </ContentPresenter>
+        </DataTemplate>
+        <!-- template per gli header del pivot-->
+        <DataTemplate x:Key="PivotHeader">
+            <ContentPresenter>
+                <TextBlock Text="{Binding}" FontSize="50" Margin="0,0,0,0"/>
+            </ContentPresenter>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Background.png"/>
+        </Grid.Background>
+
+        <phone:Pivot  Title="ENEL smart info" Foreground="White" TitleTemplate="{StaticResource PivotTitle}" HeaderTemplate="{StaticResource PivotHeader}">
+            <phone:PivotItem Header="info su" Foreground="White">
+                <Grid>
+                    <StackPanel>
+                        <ScrollViewer Height="623">
+                            <StackPanel>
+                                <TextBlock Text="Versione 1.0.0.0" FontSize="30"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.AboutStatement, Source={StaticResource LocalizedStrings}}" Margin="0,20,0,20" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="privacy" Foreground="White">
+                <Grid>
+                    <StackPanel>
+                        <ScrollViewer Height="623">
+                            <StackPanel>
+                                <TextBlock Text="Enel tratta tutti i dati personali dei propri clienti fruitori dei servizi offerti nel pieno rispetto di quanto previsto dalla normativa nazionale italiana in materia di privacy e, in particolare del D. Lgs. 196/03." Margin="0,20,0,20" TextWrapping="Wrap"/>
+                                <TextBlock Text="Puoi trovare maggiori informazioni toccando il link qui sotto:" TextWrapping="Wrap" Margin="0,20,0,0"/>
+                                <TextBlock Text="http://www.enel.it/it-IT/info/privacy/" TextWrapping="Wrap" Margin="0,20,0,0" HorizontalAlignment="Center" FontSize="25" Tap="TextBlock_Tap"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
